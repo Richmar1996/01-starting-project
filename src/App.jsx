@@ -1,33 +1,17 @@
-//App Jsx
-import Header from './components/Header/Header.jsx';
-import CoreConcept from './components/CoreConcept/CoreConcept.jsx';
-import { CORE_CONCEPTS } from './assets/data.js';
-import TabButton from './components/TabButton/TabButton.jsx';
+import Header from './Components/Header/Header.jsx';
+import CoreConcepts from './Components/CoreConcepts/CoreConcepts.jsx';
+import Examples from './Components/Examples/Examples.jsx';
+
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <main>
-        <section id="core-concepts">
-          <h2>Time to get started!</h2>
-          <ul>
-            <CoreConcept {...CORE_CONCEPTS[0]}/>
-            <CoreConcept {...CORE_CONCEPTS[1]}/>
-            <CoreConcept {...CORE_CONCEPTS[2]}/>
-            <CoreConcept {...CORE_CONCEPTS[3]}/>
-          </ul>
-        </section>
-        <section id="examples">
-          <h2>Examples</h2>
-          <menu>
-            <TabButton> Item 1 </TabButton>
-            <TabButton> Item 2 </TabButton>
-            <TabButton> Item 3 </TabButton>
-          </menu>
-        </section>
+        <CoreConcepts />
+        <Examples />
       </main>
-    </div>
-
+    </>
   );
 }
+
 export default App;

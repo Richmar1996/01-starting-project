@@ -1,8 +1,7 @@
-
-function UserData() {
+function UserData(){
   const user = {
-    first: "George",
-    last: "Satayka",
+    first:"George",
+    last:"Salayka",
     age: 41,
   };
 
@@ -17,5 +16,4 @@ function UserData() {
     </div>
   );
 }
-
 export default UserData;
